@@ -178,8 +178,8 @@ body {
 }
 
 
-{
-document.getElementById("showImageExample").addEventListener("click", function()} {
+document.getElementById{showImageExample}.addEventListener("click", function()
+
   const popup = document.createElement("div");
   popup.style.position = "fixed";
   popup.style.top = "0";
@@ -206,3 +206,91 @@ document.getElementById("showImageExample").addEventListener("click", function()
 
   popup.addEventListener("click", () => popup.remove());
 });
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  animation: fadeInHeader 1s ease-in-out;
+}
+
+.site-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00aaff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #00aaff;
+}
+
+.site-title {
+  font-size: 2rem;
+  color: #00aaff;
+  text-shadow: 0 0 10px #0077ff;
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.t-header {
+  text-align: center;
+  margin-top: 30px;
+  animation: fadeInHeader 1.5s ease-in-out;
+}
+
+.t-logo {
+  font-size: 90px;
+  font-weight: bold;
+  color: #00aaff;
+  text-shadow: 
+    0 0 15px #00aaff,
+    0 0 30px #0077ff,
+    0 0 60px #003366;
+  position: relative;
+}
+
+/* 🔥 Black fiery animation behind the blue T */
+.t-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at center, rgba(0,0,0,0.8) 10%, transparent 70%);
+  filter: blur(25px);
+  animation: firePulse 2s infinite alternate;
+  z-index: -1;
+}
+
+.t-subtitle {
+  color: #00aaff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #0077ff;
+  font-weight: 500;
+}
+
+@keyframes firePulse {
+  from {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
