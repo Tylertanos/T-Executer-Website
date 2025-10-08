@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Executer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+  <img src="assets/logo.png" alt="T-Executer Logo" class="site-logo">
+  <h1 class="site-title">T-Executer</h1>
+</header>
+
+  <main>
+    <section class="downloads">
+      <h2>Download Beta Executer</h2>
+      <div class="buttons">
+        <button class="download-btn">Windows</button>
+        <button class="download-btn">Android</button>
+        <button class="download-btn">iOS</button>
+      </div>
+    </section>
+
+    <section class="showcase">
+  <h2>Showcase</h2>
+
+  <div class="video-wrapper">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/dK9yH6TI40g?si=nlDJBzs3JdtdaPSn"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <!-- 👇 Button overlay -->
+    <button id="showImageExample">Image Example</button>
+  </div>
+</section>
+
+    <button id="showDescription" class="desc-btn">Show Description</button>
+  </main>
+
+  <!-- Popups -->
+  <div id="descriptionPopup" class="popup hidden">
+    <div class="popup-content">
+      <h3>About the Executer</h3>
+      <p>T-Executer is a powerful cross-platform script runner built by Tyler Tanos. Optimized for stability, style, and performance. This website was made by him, to get more updates on features, go to [Youtube.com/TylerTanos] Oh also since its 'Beta' Make sure to be careful about that part.</p>
+      <button class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div id="scriptPopup" class="popup hidden">
+    <div class="popup-content">
+      <img src="backup/T-Executer web/Assets/script_gui.png" alt="Script GUI
+      <button class="close-btn">Close</button>
+    </div>
+  </div>
+<div id="imagePopup" class="popup hidden">
+  <div class="popup-content">
+    <img id="imageExample/Assets/script_gui.png" alt="T-Executer Image Example" />
+    <button class="close-btn">Close</button>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
